@@ -1,10 +1,21 @@
-// Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, it will check if the current number is odd or even, and display a message to the screen with console.log().
+// 0. Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, it will check if the current number is odd or even, and display a message to the screen with console.log().
+
+// for (let index = 0; index <= 15; index++) {
+//     if (index % 2 === 0) {
+//         console.log(`${index} is even number`);
+//     } else {
+//         console.log(`${index} is odd number`);
+//     }
+
+// }
 
 for (let index = 0; index <= 15; index++) {
-    if (index % 2 === 0) {
+    if (index % 2 === 0 && index != 0) {
         console.log(`${index} is even number`);
-    } else {
+    } else if (index % 2 != 0 && index != 0) {
         console.log(`${index} is odd number`);
+    }else{
+        console.log(`${index} is neither even nor odd number`);
     }
 
 }
